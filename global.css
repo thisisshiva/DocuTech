@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Inter:700|Roboto:700|Darker+Grotesque:500");
+      @font-face {
+        font-family: "Font Awesome 6 Brands-Regular";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/62ecee36f806039f7be74d84/fonts/font-awesome-6-brands-regular-400.otf")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: "Font Awesome 6 Free-Regular";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/64385c980694ba90fbba7a71/fonts/font-awesome-6-free-regular-400.otf")
+          format("opentype");
+      }
