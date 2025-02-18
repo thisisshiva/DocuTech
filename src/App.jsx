@@ -1,14 +1,46 @@
-import { Button } from "./components/ui/button"
+import React from "react";
+
+import Navbar from "./screens/navbar";
+import CompanyLogos from "./screens/CompanyLogos";
+import { BannerSection } from "./screens/BannerSection";
+import { UploadGenerateAiSection } from "./screens/UploadGenerateAiSection";
+import TotalSignedinInfo from "./screens/TotalSignedinInfo";
+import { HowToUseSection } from "./screens/HowToUseSection";
+import WhyToChooseDT from "./screens/WhyToChooseDT";
+import { DocumentCreatingSection } from "./screens/DocCreatingSection";
+import { TestimonialsSection } from "./screens/TestimonialSection";
+import { FooterSection } from "./screens/FooterSection";
 
 
-function App() {
-  
+
+const App = () => {
   return (
-    <>
-      <h1 className="font-bold text-2xl text-center">This is shiva</h1>
-      <Button>Click me</Button>
-    </>
-  )
-}
+    <div className="bg-[#f6eee3] flex flex-row justify-center w-full">
+      <div className="bg-[#f6eee3] overflow-hidden w-[1432px] relative">
+        <Navbar/>
+
+        <BannerSection/>
+
+        <UploadGenerateAiSection/>
+
+        <CompanyLogos/>
+
+        <TotalSignedinInfo/>
+
+        <HowToUseSection/>
+
+        <WhyToChooseDT/>
+
+        <DocumentCreatingSection/>
+
+        <TestimonialsSection/>
+
+        
+
+        <FooterSection/>
+      </div>
+    </div>
+  );
+};
 
 export default App
