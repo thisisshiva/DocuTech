@@ -8,7 +8,7 @@ export const TestimonialsSection = () => {
       color: "#d37f36",
     },
     {
-      title: "SOC-2 Certified",
+      title: "SOC-2\nCertified",
       color: "#d37f36",
     },
     {
@@ -26,12 +26,13 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full max-w-[1203px] mx-auto py-16">
+    <section className="flex flex-col items-center w-full max-w-3xl mx-auto py-11">
       <h2 className="text-3xl font-bold text-neutral-800 text-center mb-16">
         Trust & Compliance
       </h2>
 
-      <div className="grid grid-cols-3 gap-x-[90px] gap-y-8 w-full">
+      {/* Flex container for the cards */}
+      <div className="flex flex-wrap justify-center gap-x-14">
         {trustFeatures.map((feature, index) => (
           <Card
             key={index}

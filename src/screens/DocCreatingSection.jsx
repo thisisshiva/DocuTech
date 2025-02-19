@@ -4,6 +4,7 @@ import { Card, CardContent } from "../components/ui/card";
 
 export const DocumentCreatingSection = () => {
   return (
+    <section className="px-4 py-8">
     <Card className="max-w-[1235px] mx-auto bg-gradient-to-b from-[#fcad00] via-[#c58600] to-[#b06000] p-12 rounded-2xl">
       <CardContent className="flex flex-col items-center gap-4">
         <div className="text-center">
@@ -35,5 +36,6 @@ export const DocumentCreatingSection = () => {
         </div>
       </CardContent>
     </Card>
+    </section>
   );
 };
