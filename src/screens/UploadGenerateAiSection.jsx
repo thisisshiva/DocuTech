@@ -10,11 +10,9 @@ export const UploadGenerateAiSection = () => {
   };
 
   const handleFileChange = (event) => {
-    // Here you can handle the file selection, e.g., upload or process the file
     const file = event.target.files[0];
     if (file) {
-      console.log('File selected:', file.name);
-      // Add your file handling logic here
+      console.log("File selected:", file.name);
     }
   };
 
@@ -36,51 +34,51 @@ export const UploadGenerateAiSection = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full max-w-[768px] items-center p-8 bg-[#d37f36] rounded-xl shadow-md sm:shadow-lg md:shadow-xl">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 w-full">
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            className="flex-1 sm:w-1/2 bg-[#f6eee3] border-2 border-dashed border-[#0c3767] rounded-lg"
-          >
-            <CardContent className="flex flex-col items-center gap-3.5 p-6 sm:p-[26px]">
-              <img className={`${card.iconSize}`} alt="Icon" src={card.icon} />
+    <div className="flex flex-col items-center w-full px-4 py-8">
+      <div className="w-full max-w-[768px] bg-[#d37f36] rounded-xl shadow-md sm:shadow-lg md:shadow-xl p-6">
+        <div className="flex flex-wrap justify-center items-center gap-6 w-full">
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              className="flex-1 min-w-[250px] max-w-[320px] bg-[#f6eee3] border-2 border-dashed border-[#0c3767] rounded-lg"
+            >
+              <CardContent className="flex flex-col items-center gap-4 p-6">
+                <img className={`${card.iconSize}`} alt="Icon" src={card.icon} />
 
-              <div className="w-full text-center">
-                <h3 className="font-bold text-neutral-800 text-xl leading-7 font-poppins">
-                  {card.title}
-                </h3>
-              </div>
+                <div className="w-full text-center">
+                  <h3 className="font-bold text-neutral-800 text-xl leading-7 font-poppins">
+                    {card.title}
+                  </h3>
+                </div>
 
-              <div className="w-full text-center py-2 sm:py-[8.5px]">
-                <p className="text-gray-600 text-[15px] leading-6 font-poppins">
+                <p className="text-gray-600 text-[15px] leading-6 text-center font-poppins">
                   {card.description}
                 </p>
-              </div>
 
-              {card.title === "Upload Document" ? (
-                <>
-                  <Button 
-                    onClick={handleFileSelect} 
-                    className="bg-[#d37f36] hover:bg-[#c27331] text-white text-[15px] px-6 py-2 font-poppins"
-                  >
+                {card.title === "Upload Document" ? (
+                  <>
+                    <Button
+                      onClick={handleFileSelect}
+                      className="bg-[#d37f36] hover:bg-[#c27331] text-white text-[15px] px-6 py-2 font-poppins"
+                    >
+                      {card.buttonText}
+                    </Button>
+                    <input
+                      type="file"
+                      ref={fileInputRef}
+                      onChange={handleFileChange}
+                      style={{ display: "none" }}
+                    />
+                  </>
+                ) : (
+                  <Button className="bg-[#d37f36] hover:bg-[#c27331] text-white text-[15px] px-6 py-2 font-poppins">
                     {card.buttonText}
                   </Button>
-                  <input 
-                    type="file" 
-                    ref={fileInputRef} 
-                    onChange={handleFileChange} 
-                    style={{ display: 'none' }}
-                  />
-                </>
-              ) : (
-                <Button className="bg-[#d37f36] hover:bg-[#c27331] text-white text-[15px] px-6 py-2 font-poppins">
-                  {card.buttonText}
-                </Button>
-              )}
-            </CardContent>
-          </Card>
-        ))}
+                )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
