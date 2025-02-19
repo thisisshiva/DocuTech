@@ -10,6 +10,7 @@ import WhyToChooseDT from "./screens/WhyToChooseDT";
 import { DocumentCreatingSection } from "./screens/DocCreatingSection";
 import { TestimonialsSection } from "./screens/TestimonialSection";
 import { FooterSection } from "./screens/FooterSection";
+import { AccordianFAQ } from "./screens/AccordianFAQ";
 
 
 
@@ -23,9 +24,9 @@ const App = () => {
 
         <UploadGenerateAiSection/>
 
-        <CompanyLogos/>
-
         <TotalSignedinInfo/>
+
+        <CompanyLogos/>
 
         <HowToUseSection/>
 
@@ -34,6 +35,8 @@ const App = () => {
         <DocumentCreatingSection/>
 
         <TestimonialsSection/>
+
+        <AccordianFAQ/>
 
         <FooterSection/>
       </div>
