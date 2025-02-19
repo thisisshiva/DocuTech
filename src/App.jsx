@@ -15,8 +15,8 @@ import { FooterSection } from "./screens/FooterSection";
 
 const App = () => {
   return (
-    <div className="bg-[#f6eee3] flex flex-row justify-center w-full">
-      <div className="bg-[#f6eee3] overflow-hidden w-[1432px] relative">
+    <div className="bg-[#f6eee3] flex flex-col items-center w-full">
+      <div className="w-full max-w-[1432px] relative">
         <Navbar/>
 
         <BannerSection/>
@@ -34,8 +34,6 @@ const App = () => {
         <DocumentCreatingSection/>
 
         <TestimonialsSection/>
-
-        
 
         <FooterSection/>
       </div>

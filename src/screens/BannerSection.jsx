@@ -10,7 +10,7 @@ export const BannerSection = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 max-w-6xl">
+    <section className="container mx-auto my-7 px-4 py-12 max-w-6xl">
       <div className="flex flex-col items-center gap-8">
         <img
           className="w-full max-w-4xl"
@@ -23,7 +23,7 @@ export const BannerSection = () => {
           &amp; Your Favorite Business Tools
         </p>
 
-        <Card className="w-full border border-black shadow-md">
+        <Card className="w-full border border-black rounded-none shadow-md">
           <CardContent className="flex flex-wrap justify-center items-center gap-4 py-2">
             {certifications.map((cert, index) => (
               <div key={index} className="flex items-center gap-2">
