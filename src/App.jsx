@@ -11,6 +11,8 @@ import { DocumentCreatingSection } from "./screens/DocCreatingSection";
 import { TestimonialsSection } from "./screens/TestimonialSection";
 import { FooterSection } from "./screens/FooterSection";
 import { AccordianFAQ } from "./screens/AccordianFAQ";
+import { TestimonialsCarousel } from "./screens/CarouselUserExp";
+
 
 
 
@@ -29,6 +31,8 @@ const App = () => {
         <CompanyLogos/>
 
         <HowToUseSection/>
+
+        <TestimonialsCarousel/>
 
         <WhyToChooseDT/>
 
