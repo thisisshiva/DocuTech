@@ -8,7 +8,7 @@ export const HowToUseSection = () => {
     <section className="w-full flex justify-center py-8 sm:py-9 px-4 bg-[#f6ede1]">
       {/* Orange Background Card */}
       <Card className="relative w-full max-w-[988px] bg-[#d37f36] rounded-2xl p-4 sm:p-10 flex justify-center">
-        <CardContent className="relative flex flex-col items-center w-full p-4 sm:p-8">
+        <CardContent className="relative flex flex-col items-center w-full p-9 sm:p-8">
           {/* White Content Box */}
           <div className="relative w-full max-w-[447px] bg-white p-6 sm:p-9 shadow-[8px_8px_15px_#00000030]">
             <h2 className="text-2xl sm:text-[38px] md:text-[42px] leading-[1.2] font-medium text-[#010101]">
@@ -20,7 +20,7 @@ export const HowToUseSection = () => {
           </div>
 
           {/* Play Button + Watch Demo */}
-          <div className="absolute bottom-[-20px] sm:bottom-[-40px] right-[-15px] sm:right-[-30px] flex items-center gap-1">
+          <div className="absolute mb-2 bottom-[-20px] sm:bottom-[-30px] right-[-15px] sm:right-[-30px] flex items-center gap-1">
             {/* Play Button Overlapping White Box */}
             <Button
               variant="ghost"

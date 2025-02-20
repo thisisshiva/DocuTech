@@ -10,7 +10,7 @@ export const BannerSection = () => {
   ];
 
   return (
-    <section className="container mx-auto my-7 px-4 py-3 max-w-6xl">
+    <section className="container mx-auto my-7 px-4 mt-14 py-3 max-w-6xl">
       <div className="flex flex-col items-center gap-8">
         <img
           className="w-full max-w-4xl"
