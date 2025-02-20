@@ -26,15 +26,15 @@ const AccordionTrigger = React.forwardRef(
           ref={ref}
           onClick={() => setIsOpen(!isOpen)} // Toggle state on click
           className={cn(
-            "flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline text-left",
+            "flex items-center justify-start py-4 text-sm font-medium transition-all hover:underline text-left w-full",
             className,
           )}
           {...props}
         >
-          {children}
-          <span className="ml-2  text-2xl font-bold text-black">
-            {isOpen ? <FaMinus/> : <FaPlus/>}
+          <span className="mr-6 ml-1 text-2xl font-bold text-black">
+            {isOpen ? <FaMinus /> : <FaPlus />}
           </span>
+          {children}
         </AccordionPrimitive.Trigger>
       </AccordionPrimitive.Header>
     );

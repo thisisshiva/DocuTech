@@ -44,7 +44,7 @@ export const AccordianFAQ = () => {
               {item.question}  
             </AccordionTrigger>  
             {item.answer && (  
-              <AccordionContent className="px-6 py-8 bg-[#f1d4bb] text-xl font-bold text-neutral-800/90">  
+              <AccordionContent className="pl-16 pr-6 pt-6 pb-9 bg-[#f1d4bb] text-xl font-bold text-neutral-800/90">  
                 {item.answer}  
               </AccordionContent>  
             )}  
