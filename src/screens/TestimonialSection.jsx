@@ -32,7 +32,7 @@ export const TestimonialsSection = () => {
       </h2>
 
       {/* Flex container for the cards */}
-      <div className="flex flex-wrap justify-center gap-x-14">
+      <div className="flex flex-wrap justify-center  sm:gap-x-14">
         {trustFeatures.map((feature, index) => (
           <Card
             key={index}
@@ -40,6 +40,7 @@ export const TestimonialsSection = () => {
             style={{ backgroundColor: feature.color }}
           >
             <CardContent className="p-0 flex items-center justify-center h-full">
+              
               <p className="font-bold text-xl text-white text-center whitespace-pre-line leading-snug">
                 {feature.title}
               </p>

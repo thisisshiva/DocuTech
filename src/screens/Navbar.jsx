@@ -15,7 +15,7 @@ const Navbar = () => {
     { id: 3, label: "Enterprise", href: "#" },
   ];
   return (
-    <nav className="w-full max-w-[76rem] mx-auto mt-4 sm:mt-[2.2rem] px-4 sm:px-0 flex flex-col sm:flex-row items-center justify-between">
+    <nav className="w-[80%]  mx-auto mt-4 sm:mt-[2.1rem] px-4 sm:px-0 flex flex-col sm:flex-row items-center justify-between">
       <div className="flex items-center justify-center sm:justify-between w-full sm:w-auto mb-4 sm:mb-0">
         <div className="flex items-center gap-2">
           <img

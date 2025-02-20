@@ -26,7 +26,7 @@ export const FooterSection = () => {
 
   return (
     <footer className="w-full pt-16">
-      <div className="max-w-[1432px] mx-auto bg-[#ead0b9] rounded-t-[30px] shadow-[0px_4px_4px_#00000040] p-8">
+      <div className="mx-auto bg-[#ead0b9] rounded-t-[30px] shadow-[0px_4px_4px_#00000040] p-8">
         {/* Logo and Tagline */}
         <div className="flex flex-col sm:flex-row justify-between items-start gap-8 sm:gap-0">
           <div className="space-y-2">

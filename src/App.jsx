@@ -11,7 +11,8 @@ import { DocumentCreatingSection } from "./screens/DocCreatingSection";
 import { TestimonialsSection } from "./screens/TestimonialSection";
 import { FooterSection } from "./screens/FooterSection";
 import { AccordianFAQ } from "./screens/AccordianFAQ";
-import { TestimonialsCarousel } from "./screens/CarouselUserExp";
+
+import {CarouselSize} from "./screens/Carousel";
 
 
 
@@ -19,8 +20,8 @@ import { TestimonialsCarousel } from "./screens/CarouselUserExp";
 const App = () => {
   return (
     <div className="bg-[#f6eee3] flex flex-col items-center w-full">
-      <div className="w-full max-w-[1432px] relative">
         <Navbar/>
+      <div className="w-full max-w-[1432px] relative">
 
         <BannerSection/>
 
@@ -32,7 +33,7 @@ const App = () => {
 
         <HowToUseSection/>
 
-        <TestimonialsCarousel/>
+        <CarouselSize/>
 
         <WhyToChooseDT/>
 
@@ -42,8 +43,8 @@ const App = () => {
 
         <AccordianFAQ/>
 
-        <FooterSection/>
       </div>
+        <FooterSection/>
     </div>
   );
 };
