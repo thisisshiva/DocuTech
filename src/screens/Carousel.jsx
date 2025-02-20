@@ -45,14 +45,14 @@ export function CarouselSize() {
   ];
 
   return (
-    <section className="py-16 px-4 w-full max-w-6xl mx-auto bg-[#f6ede1] flex flex-col items-center">
-        <h2 className="text-3xl font-bold text-neutral-900 text-center mb-8">What our users say</h2>
-
+    <section className="py-5 px-4 w-full max-w-7xl mx-auto bg-[#f6ede1] flex flex-col items-center">
+      <h2 className="text-3xl font-bold text-neutral-900 text-center mb-8">What our users say</h2>
+      
       <Carousel
         opts={{
           align: "start",
         }}
-        className="w-full max-w-[1234px] mx-auto px-4"
+        className="w-full max-w-[1234px] mx-auto px-4 py-2"
       >
         <CarouselContent>
           {testimonials.map((msg, index) => (
@@ -62,16 +62,16 @@ export function CarouselSize() {
             >
               <div className="p-1">
                 <Card className="w-full h-full shadow-[0px_7px_8px_#00000040]">
-                  <CardContent className="flex flex-col justify-evenly p-6 ">
+                  <CardContent className="flex flex-col justify-between p-16 items-start ">
                     <img
-                      className="w-14 h-14 object-cover mx-auto "
+                      className="w-14 h-14 object-cover"
                       alt="Ellipse"
                       src={msg.image}
                     />
-                    <p className="text-[15px] text-neutral-800 text-center leading-6 font-poppins mt-4">
+                    <p className="text-[15px] text-neutral-800 text-left leading-6 font-poppins mt-4">
                       {msg.text}
                     </p>
-                    <div className="flex justify-center space-x-1 mt-4">
+                    <div className="flex justify-start space-x-1 mt-4">
                       {Array.from({ length: msg.rating }).map((_, i) => (
                         <IoIosStar
                           key={i}

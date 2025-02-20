@@ -26,7 +26,7 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full max-w-3xl mx-auto py-11">
+    <section className="flex flex-col items-center w-full max-w-3xl mx-auto py-7">
       <h2 className="text-3xl font-bold text-neutral-800 text-center mb-16">
         Trust & Compliance
       </h2>

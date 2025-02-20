@@ -34,7 +34,7 @@ export const UploadGenerateAiSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full px-4 py-8">
+    <div className="flex flex-col items-center w-full px-4 py-3">
       <div className="w-full max-w-[768px] bg-[#d37f36] rounded-xl shadow-md sm:shadow-lg md:shadow-xl p-6">
         <div className="flex flex-wrap justify-center items-center gap-6 w-full">
           {cards.map((card, index) => (

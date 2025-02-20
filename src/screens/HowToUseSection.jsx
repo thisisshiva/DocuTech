@@ -5,30 +5,34 @@ import { Card, CardContent } from "../components/ui/card";
 
 export const HowToUseSection = () => {
   return (
-    <section className="w-full flex justify-center my-12 px-4">
-      <Card className="relative w-full max-w-[988px] bg-[#d37f36] rounded-2xl p-6 sm:p-12 flex justify-center">
-        <CardContent className="relative flex flex-col items-center w-full p-8">
-          {/* Main White Box with Shadow */}
-          <div className="relative w-full max-w-[447px] bg-[#f0f0f0] p-9 shadow-[9px_4px_7px_#00000040]">
-
-            <h2 className="text-6xl leading-[55px] text-[#010101]  ">
-              How to use
-              <br />
-              Docutech
+    <section className="w-full flex justify-center py-8 sm:py-9 px-4 bg-[#f6ede1]">
+      {/* Orange Background Card */}
+      <Card className="relative w-full max-w-[988px] bg-[#d37f36] rounded-2xl p-4 sm:p-10 flex justify-center">
+        <CardContent className="relative flex flex-col items-center w-full p-4 sm:p-8">
+          {/* White Content Box */}
+          <div className="relative w-full max-w-[447px] bg-white p-6 sm:p-9 shadow-[8px_8px_15px_#00000030]">
+            <h2 className="text-2xl sm:text-[38px] md:text-[42px] leading-[1.2] font-medium text-[#010101]">
+              How to use <br /> Docutech
             </h2>
-            <p className="mt-8 text-lg font-light text-black font-['Darker_Grotesque']">
+            <p className="mt-6 sm:mt-10 text-base sm:text-lg text-neutral-700">
               Step-by-Step Tutorial Demo
             </p>
           </div>
 
-          {/* Play Button with Shadow - FIXED POSITIONING */}
-          <div className=" bottom-6 right-6 flex items-center gap-2">
-            <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-full  shadow-lg">
-            <FaPlay />
-            </div>
+          {/* Play Button + Watch Demo */}
+          <div className="absolute bottom-[-20px] sm:bottom-[-40px] right-[-15px] sm:right-[-30px] flex items-center gap-1">
+            {/* Play Button Overlapping White Box */}
             <Button
               variant="ghost"
-              className="text-white font-bold text-sm sm:text-base bg-[#d37f36] hover:bg-[#b06000]"
+              className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full shadow-md border-[3px] sm:border-[4px] border-transparent hover:border-[#DFAC80] transition-all duration-300"
+            >
+              <FaPlay className="text-black text-xs sm:text-sm" />
+            </Button>
+
+            {/* Watch Demo Text */}
+            <Button
+              variant="ghost"
+              className="text-white font-semibold text-xs sm:text-sm md:text-base"
             >
               WATCH A DEMO
             </Button>

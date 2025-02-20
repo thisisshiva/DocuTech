@@ -1,6 +1,7 @@
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "lucide-react";
 import * as React from "react";
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
 
 import { cn } from "../../lib/utils";
 
@@ -16,21 +17,28 @@ const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
 AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef(
-  ({ className, children, ...props }, ref) => (
-    <AccordionPrimitive.Header className="flex">
-      <AccordionPrimitive.Trigger
-        ref={ref}
-        className={cn(
-          "flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline text-left [&[data-state=open]>svg]:rotate-180",
-          className,
-        )}
-        {...props}
-      >
-        {children}
-        <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
-      </AccordionPrimitive.Trigger>
-    </AccordionPrimitive.Header>
-  ),
+  ({ className, children, ...props }, ref) => {
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    return (
+      <AccordionPrimitive.Header className="flex">
+        <AccordionPrimitive.Trigger
+          ref={ref}
+          onClick={() => setIsOpen(!isOpen)} // Toggle state on click
+          className={cn(
+            "flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline text-left",
+            className,
+          )}
+          {...props}
+        >
+          {children}
+          <span className="ml-2  text-2xl font-bold text-black">
+            {isOpen ? <FaMinus/> : <FaPlus/>}
+          </span>
+        </AccordionPrimitive.Trigger>
+      </AccordionPrimitive.Header>
+    );
+  },
 );
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
