@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "./screens/navbar";
+import Navbar from "./screens/Navbar";
 import CompanyLogos from "./screens/CompanyLogos";
 import { BannerSection } from "./screens/BannerSection";
 import { UploadGenerateAiSection } from "./screens/UploadGenerateAiSection";
